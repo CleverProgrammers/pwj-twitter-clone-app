@@ -3,13 +3,69 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>My Blog</title>
+        <title>Twitter Tweet</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/tweet.css">
+        <script src="https://kit.fontawesome.com/c939d0e917.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="container home-page">
+            <div class="navigation">
+                <nav>
+                    <div class="logo">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="nav-item home-link">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="nav-item profile-container">
+                        <div class="profile"></div>
+                    </div>
+                </nav>
+            </div>
+            <div class="main">
+                <div class="tweets-container">
+                    <div class="tweets-search-container">
+                        <div class="tweets-search-input">
+                            <input type="text" placeholder="Search Twitter"/>
+                            <i class="fas fa-search fa-flip-horizontal"></i>
+                        </div>
+                    </div>
+                    <div class="tweets-list">
+                        <div class="tweet-container">
+                            <div class="tweet-user-info">
+                                <div class="tweet-user-profile"></div>
+                                <div class="tweet-user-name-container">
+                                    <div class="tweet-user-fullname">Nazariy Dumanskyy</div>
+                                    <div class="tweet-user-username">@nazdumanskyy</div>
+                                </div>
+                            </div>
+                            <div class="tweet-text-container">
+                                <span class="tweet-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie nisi sit amet enim hendrerit mollis. Praesent rutrum libero turpis, ac iaculis tellus tristique eget. Praesent faucibus eleifend neque a varius. Quisque tincidunt imperdiet purus ac fringilla. Sed tristique, enim ac ullamcorper posuere, quam urna viverra lectus, sit amet cursus eros augue eget diam. Pellentesque hendrerit lorem vitae enim pretium, eu eleifend felis varius.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tweets-sidebar-container">
+                    <div class="tweets-sidebar">
+                        <div class="tweets-trending">
+                            <h5>Trends for you</h5>
+                            <ul>
+                                <li>#Coding</li>
+                                <li>#JavaScript</li>
+                                <li>#Python</li>
+                                <li>#Tesla</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
         </div>
         <script src="js/index.js" async defer></script>
     </body>
