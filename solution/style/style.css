@@ -8,12 +8,20 @@ body {
     display: flex;
 }
 
-.navigation {
-    flex: 0.2;
-    height: 100vh;
+.navigation-container {
     border-right: 1px solid #1C1C1C;
     max-width: 100px;
     min-width: 70px;
+    width: 20%;
+}
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 100px;
+    min-width: 70px;
+    width: 20%;
 }
 
 nav {
