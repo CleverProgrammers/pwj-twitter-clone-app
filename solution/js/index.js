@@ -11,7 +11,7 @@ const getTwitterData = () => {
         return response.json();
     }).then((data)=>{
         buildTweets(data.statuses);
-    })
+    });
 }
 
 const selectTrend = (e) => {
