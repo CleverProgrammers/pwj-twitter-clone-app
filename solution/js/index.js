@@ -27,12 +27,14 @@ const buildTweets = (tweets) => {
                         <div class="tweet-user-username">@${tweet.user.screen_name}</div>
                     </div>
                 </div>
-                <div class="tweet-images-container">
-                    <div class="tweet-image"></div>
-                    <div class="tweet-image"></div>
-                    <div class="tweet-image"></div>
-                    <div class="tweet-image"></div>
-                </div>
+        `
+        if(tweet.extended_entities 
+            && tweet.extended_entities.media
+            && tweet.extended_entities.media.length > 0){
+            twitterContent += buildImages(tweet.extended_entities.media);
+            twitterContent += buildVideo(tweet.extended_entities.media);
+        }
+        twitterContent += `
                 <div class="tweet-text-container">
                     <span class="tweet-text">
                     ${tweet.full_text}
@@ -42,4 +44,47 @@ const buildTweets = (tweets) => {
         `
     })
     document.querySelector('.tweets-list').innerHTML = twitterContent;
+}
+
+const buildImages = (mediaList) => {
+    let imagesContent = `<div class="tweet-images-container">`;
+    let imagesExist = false;
+    mediaList.map((media)=>{
+        if(media.type == "photo"){
+            imagesExist = true;
+            imagesContent += `
+                <div class="tweet-image" style="background-image: url(${media.media_url_https})"></div>
+            `
+        }
+    })
+    imagesContent += `</div>`;
+    return (imagesExist ? imagesContent : '');
+}
+
+const buildVideo = (mediaList) => {
+    let videoContent = `<div class="tweet-video-container">`;
+    let videoExists = false;
+    mediaList.map((media)=>{
+        if(media.type == "video" || media.type == 'animated_gif'){
+            videoExists = true;
+            const video = media.video_info.variants.find((video)=>video.content_type == 'video/mp4');
+            const videoOptions = getVideoOptions(media.type);
+            videoContent += `
+            <video ${videoOptions}>
+                <source src="${video.url}" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            `
+        }
+    })
+    videoContent += `</div>`;
+    return (videoExists ? videoContent : '');
+}
+
+const getVideoOptions = (mediaType) => {
+    if(mediaType == 'animated_gif'){
+        return "loop autoplay";
+    } else {
+        return "controls";
+    }
 }
