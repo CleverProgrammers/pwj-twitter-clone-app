@@ -13,7 +13,6 @@
 .tweet-text-container {
     color: white;
     font-size: 15px;
-    max-height: 35px;
     overflow-y: hidden;
     margin: 20px;
     display: flex;
@@ -33,6 +32,8 @@
     background-color: white;
     border-radius: 50%;
     border: 1px solid #979797;
+    background-position: center;
+    background-size: cover;
 }
 
 .tweet-user-name-container {
