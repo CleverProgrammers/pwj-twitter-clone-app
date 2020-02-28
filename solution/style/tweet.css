@@ -1,7 +1,6 @@
 .tweet-container {
     margin-top: 20px;
     border-radius: 20px;
-    min-height: 200px;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -22,6 +21,7 @@
 .tweet-user-info {
     margin-left: 20px;
     margin-top: 10px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
 }
@@ -64,7 +64,9 @@
     border-radius: 20px;
     height: 230px;
     overflow: hidden;
-    margin: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -83,7 +85,9 @@
     border-radius: 20px;
     height: 230px;
     overflow: hidden;
-    margin: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 .tweet-video-container video {
