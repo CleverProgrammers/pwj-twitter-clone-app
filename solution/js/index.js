@@ -10,9 +10,14 @@ const getTwitterData = () => {
     }).then((response)=>{
         return response.json();
     }).then((data)=>{
-        
         buildTweets(data.statuses);
     })
+}
+
+const selectTrend = (e) => {
+    const trendText = e.innerText;
+    document.getElementById("user-search-input").value = trendText;
+    getTwitterData();
 }
 
 const buildTweets = (tweets) => {
