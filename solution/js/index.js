@@ -1,17 +1,45 @@
 const URL = "http://localhost:3000/tweets";
+const nextPageData = {
+    loading: false,
+    url: null
+}
 
-const getTwitterData = () => {
+const onEnter = (e) => {
+    if(e.key == "Enter") {
+        getTwitterData();
+    }
+}
+
+const onNextPage = () => {
+    if(nextPageData.url){
+        getTwitterData(true);
+    }
+}
+
+const getTwitterData = (nextPage=false) => {
     const query = document.getElementById("user-search-input").value;
+    if(!query) return;
     const encodedQuery = encodeURIComponent(query);
-    const params = `q=${encodedQuery}&result_type=popular`;
-    const fullUrl = `${URL}?${params}`;
+    const params = `q=${encodedQuery}&result_type=mixed`;
+    let fullUrl = `${URL}?${params}`;
+    if(nextPage){
+        fullUrl = nextPageData.url;
+        nextPageData.loading = true;
+    }
     fetch(fullUrl, {
         method: 'GET'
     }).then((response)=>{
         return response.json();
     }).then((data)=>{
-        buildTweets(data.statuses);
+        saveNextPage(data.search_metadata)
+        buildTweets(data.statuses, nextPage);
+        nextPageButtonVisibility(data.search_metadata);
     });
+}
+
+const saveNextPage = (metadata) => {
+    nextPageData.url = `${URL}${metadata.next_results}`
+    nextPageData.loading = false;
 }
 
 const selectTrend = (e) => {
@@ -20,9 +48,18 @@ const selectTrend = (e) => {
     getTwitterData();
 }
 
-const buildTweets = (tweets) => {
+const nextPageButtonVisibility = (metadata) => {
+    let visibility = 'hidden';
+    if(metadata.next_results){
+        visibility = 'visible';
+    }
+    document.getElementById('next-page').style.visibility = visibility;
+}
+
+const buildTweets = (tweets, nextPage) => {
     let twitterContent = "";
     tweets.map((tweet)=>{
+        const createdDate = moment(tweet.created_at).fromNow();
         twitterContent += `
             <div class="tweet-container">
                 <div class="tweet-user-info">
@@ -45,10 +82,17 @@ const buildTweets = (tweets) => {
                     ${tweet.full_text}
                     </span>
                 </div>
+                <div class="tweet-date">
+                    ${createdDate}
+                </div>
             </div>
         `
     })
-    document.querySelector('.tweets-list').innerHTML = twitterContent;
+    if(nextPage){
+        document.querySelector('.tweets-list').insertAdjacentHTML('beforeend', twitterContent)
+    } else {
+        document.querySelector('.tweets-list').innerHTML = twitterContent;
+    }
 }
 
 const buildImages = (mediaList) => {

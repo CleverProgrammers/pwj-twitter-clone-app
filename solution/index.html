@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style/style.css">
         <link rel="stylesheet" href="style/tweet.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
         <script src="https://kit.fontawesome.com/c939d0e917.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -31,14 +32,19 @@
                 <div class="tweets-container">
                     <div class="tweets-search-container">
                         <div class="tweets-search-input">
-                            <input id="user-search-input" type="text" placeholder="Search Twitter Tweet"/>
+                            <input id="user-search-input" type="text" placeholder="Search Twitter" onkeyup="onEnter(event)"/>
                             <i class="fas fa-search fa-flip-horizontal" onclick="getTwitterData()"></i>
                         </div>
                     </div>
                     <div class="tweets-list">
                         <div class="tweets-welcome-message">
-                            <h5>Welcome to Twitter Tweet!</h5>
+                            <h5>Welcome to Twitter!</h5>
                             <p>Use the search above to see what's happening around the world.</p>
+                        </div>
+                    </div>
+                    <div class="next-page-container">
+                        <div id="next-page" onclick="onNextPage()">
+                            <i class="fas fa-arrow-down"></i>
                         </div>
                     </div>
                 </div>
@@ -48,14 +54,12 @@
                             <h5>Trends for you</h5>
                             <ul>
                                 <li onclick="selectTrend(this)" >#Coding</li>
-                                <li onclick="selectTrend(this)">#JavaScript</li>
+                                <li onclick="selectTrend(this)">#Programminghumor</li>
                                 <li onclick="selectTrend(this)">#Python</li>
                                 <li onclick="selectTrend(this)">#Tesla</li>
                             </ul>
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </div>

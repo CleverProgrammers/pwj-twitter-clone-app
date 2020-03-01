@@ -13,9 +13,11 @@
     color: #ffffffbf;
     font-size: 15px;
     overflow-y: hidden;
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     display: flex;
     margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .tweet-user-info {
@@ -72,9 +74,9 @@
 }
 
 .tweet-image {
-    background-image: url(https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&auto=format&fit=crop&w=2508&q=80);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     flex-basis: 50%;
     flex-grow: 1;
 }
@@ -111,4 +113,29 @@
 
 .tweets-welcome-message p {
     font-size: 10px;
+}
+
+#next-page {
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    visibility: hidden;
+    border: 1px solid #1C1C1C;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    color: #47525d;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#next-page:hover {
+    background-color: #1C1C1C;
+}
+
+.tweet-date {
+    color: #47525d;
+    font-size: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
