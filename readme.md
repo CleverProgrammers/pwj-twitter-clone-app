@@ -50,7 +50,13 @@ It needs to follow a class structure like this:
 
     User Twitter Handel: font-size: 8px
 
-## TODO: Create HTML and Style for Trending Box
+## TODO(Together): Create HTML and Style for Trending Box
+
+### TODO: Complete styling for list of trends
+
+#### HINTS:
+
+    List Item: padding-left: 20px; padding-top and bottom: 8px
 
 ## TODO(API): Set up NodeJS Server
 
