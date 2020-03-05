@@ -24,7 +24,7 @@ It needs to follow a class structure like this:
 
             class profile 
 
-## TODO: Create HTML and Style for Input Box
+## TODO(Together): Create HTML and Style for Input Box
 
 ## TODO: Create HTML and Style for Individual Tweet
 
