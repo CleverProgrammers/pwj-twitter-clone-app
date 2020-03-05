@@ -6,6 +6,8 @@ That involves the navigation, tweets list, and trending hashtags section.
 
 ## TODO: Create HTML and Style for Navigation
 
+### TODO(Together) Add fontawesome
+
 Use Mockup for styles like border
 
 It needs to follow a class structure like this:
