@@ -28,6 +28,8 @@ It needs to follow a class structure like this:
 
 ## TODO(Together): Create HTML and Style for Individual Tweet
 
+### TODO: Complete User Info HTML and Styling
+
 It needs to follow a class structure like this:
 
     class tweet-user-info
@@ -47,8 +49,6 @@ It needs to follow a class structure like this:
     User Full Name: font-size: 10px
 
     User Twitter Handel: font-size: 8px
-
-### TODO: Complete User Info HTML and Styling
 
 ## TODO: Create HTML and Style for Trending Box
 
