@@ -6,6 +6,24 @@ That involves the navigation, tweets list, and trending hashtags section.
 
 ## TODO: Create HTML and Style for Navigation
 
+Use Mockup for styles like border
+
+It needs to follow a class structure like this:
+
+    class navigation
+
+        class logo
+
+            <i class="fab fa-twitter"></i>
+
+        class home-link
+
+            <i class="fas fa-home"></i>
+
+        class profile-container
+
+            class profile 
+
 ## TODO: Create HTML and Style for Input Box
 
 ## TODO: Create HTML and Style for Individual Tweet
