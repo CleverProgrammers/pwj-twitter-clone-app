@@ -26,6 +26,8 @@ It needs to follow a class structure like this:
 
 ## TODO(Together): Create HTML and Style for Input Box
 
+### TODO: Create HTML and Style for User Info
+
 It needs to follow a class structure like this:
 
     class tweet-user-info
