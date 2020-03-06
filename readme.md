@@ -60,6 +60,10 @@ It needs to follow a class structure like this:
 
 ## TODO(API): Set up NodeJS Server
 
+Return `Hello World` for the root `/` get request
+
+[Example](https://expressjs.com/en/starter/hello-world.html)
+
 ## TODO(API, TOGETHER): Create API endpoint `/tweeets` to return a list of tweets based on query
 
 Use [axios](https://github.com/axios/axios) for making an API request to Twitter API
