@@ -74,6 +74,14 @@ Return as a response
 
 ## TODO(API): Create Twitter `get()` helper function to move the Twitter API logic
 
+#### HINTS:
+
+    - Create Twitter class inside `api/helpers/twitter.js`
+    - Create a `get()` function that takes in the necessary parameters
+    - Inside `get()` return `axios.get(...)`
+    - Import Twitter class in `app.js` with `const twitter = new Twitter();`
+    - Initialize and use the `twitter` object to now do somethong like `twitter.get(...).then(...).catch(...)`
+
 ## TODO(API, TOGETHER): Move the API Token to .env file and import it
 
 ## TODO: Complete `getTwitterData()` function to retrieve data from our API
