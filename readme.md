@@ -139,11 +139,9 @@ This time you are building a dynamic url that will change based on the user's se
 
 ## TODO: Save Next Page Data
 
-## TODO: Show the next page of tweets upon clikcing next page
+## TODO: Show the next page of tweets upon clicking next page
 
 [Here](https://developer.twitter.com/en/docs/tweets/timelines/guides/working-with-timelines) is how twitter pagination works
-
-#### TODO(API): ...something that has to do with `max_id`
 
 ## TODO: Fix logic to replace tweets when searching, but append tweets when going to next page
 
