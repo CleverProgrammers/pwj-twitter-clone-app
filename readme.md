@@ -90,6 +90,12 @@ For now, I want you to use the following static url to get data from api:
 
 ```http://localhost:3000/tweets?q=coding&count=10&result_type=popular&tweet_mode=extended```
 
+### HINTS:
+
+    - Use `fetch()`
+    - Call function on load of js
+    - Console log response
+
 ## TODO: Get search input and use it to build a `url` like the one above
 
 This time you are building a dynamic url that will change based on the user's search input
