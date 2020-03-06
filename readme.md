@@ -88,7 +88,7 @@ Return as a response
 
 For now, I want you to use the following static url to get data from api:
 
-```http://localhost:3000/tweets?q=coding&count=10&result_type=popular&tweet_mode=extended```
+```http://localhost:3000/tweets?q=coding&count=10```
 
 ### HINTS:
 
