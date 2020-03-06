@@ -111,6 +111,13 @@ This time you are building a dynamic url that will change based on the user's se
 
 ## TODO: Complete `buildTweets()` function to show the Tweets List(only text)
 
+#### HINTS:
+
+    - Call `buildTweets()` function from `getTwitterData()`
+    - Use List.map() to loop over the list of tweets
+    - Use string literals to replace html with the text from each tweet
+    - Replace html content inside `.tweets-list`
+
 ## TODO: Add abiliy to show images in the tweets
 
 ## TODO: Add ability to show videos in the tweets
