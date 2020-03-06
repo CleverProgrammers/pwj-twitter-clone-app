@@ -143,6 +143,8 @@ This time you are building a dynamic url that will change based on the user's se
 
 [Here](https://developer.twitter.com/en/docs/tweets/timelines/guides/working-with-timelines) is how twitter pagination works
 
+#### TODO(API): ...something that has to do with `max_id`
+
 ## TODO: Fix logic to replace tweets when searching, but append tweets when going to next page
 
 ## WE ARE DONE!
