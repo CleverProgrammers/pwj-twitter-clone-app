@@ -150,17 +150,21 @@ This time you are building a dynamic url that will change based on the user's se
     - border-radius: 20px; margin-top: 20px;
     - Use arrow down font awesome icon
 
-## TODO(Together): Save Next Page Data
+## TODO(Together): Showing Next Page of Tweets
 
-### TODO: Show next page button only when there is a next page
+### TODO: Save Next Page Url
 
-## TODO: Show the next page of tweets upon clicking next page
+### TODO: Load tweets when selecting the next page button
 
 [Here](https://developer.twitter.com/en/docs/tweets/timelines/guides/working-with-timelines) is how twitter pagination works
 
-#### TODO(API): ...something that has to do with `max_id`
+### TODO(API): ...something that has to do with `max_id`
 
-## TODO: Fix logic to replace tweets when searching, but append tweets when going to next page
+### TODO: Fix logic to replace tweets when searching, but append tweets when going to next page
+
+### TODO: Show next page button only when there is a next page
+
+## TODO: Clean Up
 
 ## WE ARE DONE!
 
