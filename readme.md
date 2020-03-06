@@ -84,7 +84,15 @@ For now, I want you to use the following static url to get data from api:
 
 ## TODO: Get search input and use it to build a `url` like the one above
 
-This time you are building a dynamic url that will change based on the user's serch input
+This time you are building a dynamic url that will change based on the user's search input
+
+#### HINTS:
+
+    - Call `getTwitterData()` function when a user clicks on search icon
+    - Use string literals to build out the url
+    - Console log response
+
+### TODO(Together): Get twitter data when a user hits enter
 
 
 ## TODO: Complete `buildTweets()` function to show the Tweets List(only text)
