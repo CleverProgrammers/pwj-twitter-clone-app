@@ -144,7 +144,15 @@ This time you are building a dynamic url that will change based on the user's se
 
 ## TODO: Create HTML and Style for Next Page Button
 
-## TODO: Save Next Page Data
+#### HINTS:
+
+    - Use `next-page-container` class
+    - border-radius: 20px; margin-top: 20px;
+    - Use arrow down font awesome icon
+
+## TODO(Together): Save Next Page Data
+
+### TODO: Show next page button only when there is a next page
 
 ## TODO: Show the next page of tweets upon clicking next page
 
