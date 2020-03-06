@@ -135,6 +135,13 @@ This time you are building a dynamic url that will change based on the user's se
 
 ## TODO: Complete `selectTrend()` function to allow a user to click on the trend and search for it
 
+#### HINTS:
+
+    - Call `selectTrend()` function from list item click
+    - Get the inner text of list item
+    - Set the value of input search using the text
+    - Call `getTwitterData()` function
+
 ## TODO: Create HTML and Style for Next Page Button
 
 ## TODO: Save Next Page Data
