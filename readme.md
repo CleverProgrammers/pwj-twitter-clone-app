@@ -125,9 +125,9 @@ This time you are building a dynamic url that will change based on the user's se
     - Use `buildImages()` function
     - Check if there is media using `.length`property to call `buildImages()` function
 
-## TODO: Add ability to show videos in the tweets
+## TODO(Together): Add ability to show videos in the tweets
 
-## TODO: Add ability to show gifs in the tweets
+## TODO(Together): Add ability to show gifs in the tweets
 
 ## TODO: Show user info in the tweets
 
