@@ -131,7 +131,7 @@ This time you are building a dynamic url that will change based on the user's se
 
 ## TODO: Show user info in the tweets
 
-## TODO: Use [moment.js](https://momentjs.com/) to show the date of tweet
+## TODO(Together): Use [moment.js](https://momentjs.com/) to show the date of tweet
 
 ## TODO: Complete `selectTrend()` function to allow a user to click on the trend and search for it
 
