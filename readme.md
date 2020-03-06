@@ -90,7 +90,7 @@ For now, I want you to use the following static url to get data from api:
 
 ```http://localhost:3000/tweets?q=coding&count=10```
 
-### HINTS:
+#### HINTS:
 
     - Use `fetch()`
     - Call function on load of js
@@ -119,6 +119,11 @@ This time you are building a dynamic url that will change based on the user's se
     - Replace html content inside `.tweets-list`
 
 ## TODO: Add abiliy to show images in the tweets
+
+#### HNTS:
+
+    - Use `buildImages()` function
+    - Check if there is media using `.length`property to call `buildImages()` function
 
 ## TODO: Add ability to show videos in the tweets
 
